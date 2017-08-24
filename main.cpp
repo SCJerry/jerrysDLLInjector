@@ -70,7 +70,7 @@ int main(void)
 
 		printf("succeed\nCreating Remote Thread...");
 
-		HANDLE hThread = CreateRemoteThread(hRemoteProc, NULL, 0, pLoadLibraryA, pRemoteDLLPath, 0, NULL);                                           //create a thread that does LoadLibraryA and loads our dll to the process
+		HANDLE hThread = CreateRemoteThread(hRemoteProc, NULL, 0, pLoadLibraryA, pRemoteDLLPath, 0, NULL);                                           //create a remote thread that does LoadLibraryA and loads our dll to the process
 		if (!hThread)
 			throw("error\nFailed To Create Remote Thread");
 
