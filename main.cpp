@@ -109,7 +109,7 @@ int main(void)
 
 
 //Retrieves Target Process PID
-//Retrieve: WCHAR String Ptr To Process Name
+//Retrieve: wchar String Ptr To Process Name
 //Return: succeed: Target Process PID; Failed: -1
 DWORD getProcessID(WCHAR *procName)
 {
