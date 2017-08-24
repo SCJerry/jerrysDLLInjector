@@ -13,7 +13,7 @@ int main(void)
 	char dllPath[MAX_PATH];
 	WCHAR procName[MAX_PATH];
 
-	printf("Target Process Name = ");         //user input name of the process to inject the dll
+	printf("Target Process Name = ");         //user input target process name for injection
 	wscanf(L"%ls", procName);
 	printf("\n");
 
